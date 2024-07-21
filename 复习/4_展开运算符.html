@@ -21,12 +21,17 @@
 
       console.log(sum(1, 2, 3, 4));
 
+      //构造字面量时使用展开运算符
       let person = { name: "tom", age: 18 };
       //   console.log(...person);//展开运算符无法展开对象
       let person2 = { ...person }; //复制对象，注意需要加上花括号
       person2.name = "jerry";
       console.log(person);
       console.log(person2);
+
+      //合并
+      let person3 = { ...person, name: "jack" };
+      console.log(person3);
     </script>
   </body>
 </html>
